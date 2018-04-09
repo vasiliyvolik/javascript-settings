@@ -2,7 +2,6 @@ package JavaScript.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2017_2.*
 import jetbrains.buildServer.configs.kotlin.v2017_2.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.v2017_2.triggers.vcs
 
 object JavaScript_Template : Template({
     uuid = "1a25284d-1689-4428-9a49-46c6e1d8a34b"
