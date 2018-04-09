@@ -13,6 +13,17 @@ object JavaScript_03DeployToStaging : BuildType({
         root(JavaScript.vcsRoots.JavaScript_HttpsGithubComG0t4teamcityCourseCards)
 
     }
+    steps {
+        script {
+            name = "IIS Deploy"
+            id = "RUNNER_6"
+            scriptContent = """
+mkdir /S /Q /interpub/wwwroot
+xcopy /S /I /Y app /interpub/wwwroot
+			"""
+        }
+    }
+
 
     dependencies {
         dependency(JavaScript.buildTypes.JavaScript_02Firefox) {
