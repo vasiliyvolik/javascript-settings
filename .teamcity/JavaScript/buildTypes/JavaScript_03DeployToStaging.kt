@@ -2,6 +2,7 @@ package JavaScript.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2017_2.*
 import jetbrains.buildServer.configs.kotlin.v2017_2.triggers.vcs
+import jetbrains.buildServer.configs.kotlin.v2017_2.buildSteps.script
 
 
 object JavaScript_03DeployToStaging : BuildType({
@@ -13,6 +14,7 @@ object JavaScript_03DeployToStaging : BuildType({
         root(JavaScript.vcsRoots.JavaScript_HttpsGithubComG0t4teamcityCourseCards)
 
     }
+
     steps {
         script {
             name = "IIS Deploy"
