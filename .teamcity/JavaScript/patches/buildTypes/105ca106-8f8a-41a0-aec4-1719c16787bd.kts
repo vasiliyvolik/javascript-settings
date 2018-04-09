@@ -23,8 +23,8 @@ changeBuildType("105ca106-8f8a-41a0-aec4-1719c16787bd") {
     steps {
         update<ScriptBuildStep>(0) {
             scriptContent = """
-                rem mkdir /S /Q \interpub\wwwroot
-                xcopy /S /I /Y app \interpub\wwwroot
+                rem mkdir /S /Q \inetpub\wwwroot
+                xcopy /S /I /Y app \inetpub\wwwroot
             """.trimIndent()
         }
     }
